@@ -1,0 +1,129 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    background-color: theme('colors.background');
+    color: theme('colors.on-surface');
+    position: relative;
+  }
+}
+
+
+
+.gradient-bg {
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: radial-gradient(circle at top left, rgba(82, 3, 213, 0.15) 0%, transparent 60%);
+  z-index: -1;
+  pointer-events: none;
+}
+
+.glass-card {
+  background: theme('colors.surface-container');
+  border: 1px solid theme('colors.outline-variant');
+  backdrop-filter: blur(12px);
+}
+
+.text-gradient {
+  background: linear-gradient(to right, theme('colors.secondary'), theme('colors.tertiary'));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Subtle Bloom/Glow effects */
+.glow-hover:hover {
+  box-shadow: 0 0 15px rgba(205, 189, 255, 0.1);
+  border-color: #cdbdff;
+}
+
+.tech-card-glow {
+  background: radial-gradient(circle at top left, rgba(82, 3, 213, 0.05), transparent 40%);
+}
+
+/* Scrollbar styling for a cleaner look */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #0e0e0e; 
+}
+::-webkit-scrollbar-thumb {
+  background: #2a2a2a; 
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #353534; 
+}
+
+/* Loading Screen Animations */
+@keyframes slide-up-fade {
+  0% { transform: translateY(40px); opacity: 0; filter: blur(10px); }
+  100% { transform: translateY(0); opacity: 1; filter: blur(0px); }
+}
+
+@keyframes fade-in-delayed {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@keyframes progress-bar {
+  0% { transform: translateX(-100%); }
+  100% { transform: translateX(100%); }
+}
+
+.animate-slide-up-fade {
+  animation: slide-up-fade 1.2s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.animate-fade-in-delayed {
+  animation: fade-in-delayed 1s ease-in 0.8s forwards;
+}
+
+.animate-progress-bar {
+  animation: progress-bar 1.5s cubic-bezier(0.65, 0, 0.35, 1) infinite;
+}
+
+/* SaaS Advanced Animations */
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-15px); }
+  100% { transform: translateY(0px); }
+}
+
+@keyframes shimmer {
+  0% { transform: translateX(-100%); }
+  100% { transform: translateX(100%); }
+}
+
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
+
+.animate-shimmer {
+  position: relative;
+  overflow: hidden;
+}
+
+.animate-shimmer::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+  animation: shimmer 2s infinite;
+}
+
+/* Advanced Hover Card Styles */
+.hover-card-saas {
+  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.hover-card-saas:hover {
+  transform: translateY(-8px);
+  border-color: rgba(139, 92, 246, 0.6); /* Purple/Secondary */
+  box-shadow: 0 10px 40px -10px rgba(139, 92, 246, 0.3);
+}
+
