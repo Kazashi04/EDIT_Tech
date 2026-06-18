@@ -9,6 +9,18 @@ export default function HeroSection({ onOpenVideo }: { onOpenVideo: () => void }
         With years of experience creating high-impact digital content, I specialize in the full Premiere Pro and After Effects workflow and high-retention editing. My background in IT and React web development ensures a highly technical approach to every creative project. This is the best edit I've made.
       </p>
       
+      <div className="flex gap-4 mt-2 animate-fade-in-delayed">
+        <a 
+          href="/John_Lloyd_Puda_Resume.pdf" 
+          target="_blank" 
+          rel="noopener noreferrer"
+          className="bg-primary text-on-primary px-8 py-3 rounded-full font-bold uppercase tracking-widest text-sm hover:scale-105 transition-transform duration-300 shadow-[0_0_20px_rgba(82,3,213,0.4)] flex items-center gap-2"
+        >
+          <span className="material-symbols-outlined text-lg">description</span>
+          View Resume
+        </a>
+      </div>
+
       {/* Video Placeholder 16:9 */}
       <div 
         className="w-full max-w-5xl aspect-video rounded-xl overflow-hidden glass-card relative group cursor-pointer mt-8 animate-float shadow-[0_0_40px_rgba(82,3,213,0.1)] hover:shadow-[0_0_60px_rgba(82,3,213,0.2)] transition-shadow duration-500"
