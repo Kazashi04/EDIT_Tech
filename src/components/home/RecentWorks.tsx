@@ -40,6 +40,66 @@ export default function RecentWorks() {
         </div>
       </div>
 
+      {/* Documentary Showcase */}
+      <div className="flex flex-col gap-8">
+        <div className="flex flex-col gap-2">
+          <h2 className="font-headline-lg text-headline-lg text-on-surface">Long-Form, Documentary & UGC</h2>
+          <p className="text-on-surface-variant font-body-lg">
+            Experience in pacing, storytelling, and narrative building for extended content and authentic user-generated stories.
+          </p>
+        </div>
+        
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
+          {/* Documentary Video 1 */}
+          <div className="glass-card hover-card-saas rounded flex flex-col group overflow-hidden border-outline-variant/20 hover:border-secondary/50 transition-colors md:col-span-1">
+            <div className="aspect-video w-full bg-surface-container-highest relative overflow-hidden">
+              <video 
+                src="/videos/Sample_Edit_Documentary.mp4" 
+                className="w-full h-full object-cover opacity-90 group-hover:opacity-100 transition-opacity duration-300"
+                controls
+                playsInline
+              />
+            </div>
+            <div className="p-4 flex flex-col gap-1">
+              <h3 className="font-body-md text-body-md font-bold text-on-surface">Disaster Documentary</h3>
+              <span className="text-label-sm text-on-surface-variant">Narrative & Pacing</span>
+            </div>
+          </div>
+
+          {/* Documentary Video 2 (UGC) */}
+          <div className="glass-card hover-card-saas rounded flex flex-col group overflow-hidden border-outline-variant/20 hover:border-secondary/50 transition-colors md:col-span-1">
+            <div className="aspect-video w-full bg-surface-container-highest relative overflow-hidden">
+              <video 
+                src="/videos/Sample_Edit_Documentary_2.mp4" 
+                className="w-full h-full object-cover opacity-90 group-hover:opacity-100 transition-opacity duration-300"
+                controls
+                playsInline
+              />
+            </div>
+            <div className="p-4 flex flex-col gap-1">
+              <h3 className="font-body-md text-body-md font-bold text-on-surface">Personal Story / UGC</h3>
+              <span className="text-label-sm text-on-surface-variant">Authentic Storytelling</span>
+            </div>
+          </div>
+          
+          <div className="md:col-span-2 flex flex-col justify-center gap-4 p-6 glass-card hover-card-saas rounded border-outline-variant/20 transition-colors">
+            <h3 className="font-headline-md text-headline-md text-on-surface">The Art of the Long Form & Authentic Narrative</h3>
+            <p className="text-on-surface-variant font-body-md">
+              While short-form content relies on the immediate hook, long-form documentary and UGC (User-Generated Content) editing focus on building tension, emotional resonance, and a cohesive narrative arc. 
+            </p>
+            <p className="text-on-surface-variant font-body-md">
+              Whether it's a deep-dive disaster documentary or an authentic, memorable personal story, this involves careful B-roll curation, precise audio mixing, and deliberate pacing to maintain audience retention and emotional connection.
+            </p>
+            <div className="flex flex-wrap gap-2 mt-2">
+              <span className="bg-surface-container-highest px-3 py-1 rounded text-on-surface-variant font-code-sm text-code-sm border border-outline-variant/50">Storytelling</span>
+              <span className="bg-surface-container-highest px-3 py-1 rounded text-on-surface-variant font-code-sm text-code-sm border border-outline-variant/50">UGC</span>
+              <span className="bg-surface-container-highest px-3 py-1 rounded text-on-surface-variant font-code-sm text-code-sm border border-outline-variant/50">Pacing</span>
+              <span className="bg-surface-container-highest px-3 py-1 rounded text-on-surface-variant font-code-sm text-code-sm border border-outline-variant/50">Audio Mixing</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
       {/* Hooks Showcase */}
       <div className="flex flex-col gap-8">
         <div className="flex flex-col gap-2">

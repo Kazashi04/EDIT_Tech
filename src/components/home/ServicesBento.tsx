@@ -7,10 +7,11 @@ export default function ServicesBento() {
           <span className="material-symbols-outlined text-3xl" style={{ fontVariationSettings: "'FILL' 0" }}>movie_edit</span>
           <h2 className="font-headline-lg text-headline-lg text-on-surface">Video Editing</h2>
         </div>
-        <p className="text-on-surface-variant">Expert in Adobe Premiere Pro and After Effects, specializing in dynamic short-form videos, B-Roll sequences, color grading, and creating strong 'hooks' to stop the scroll. Fast and clean editing for maximum viewer retention.</p>
+        <p className="text-on-surface-variant">Expert in Adobe Premiere Pro and After Effects, specializing in both long-form documentary narratives and dynamic short-form videos. From crafting cohesive story arcs and pacing for 20+ minute edits to creating strong hooks that stop the scroll.</p>
         <div className="flex flex-wrap gap-2 mt-auto pt-4">
           <span className="bg-surface-container-highest px-3 py-1 rounded text-on-surface-variant font-code-md text-code-md border border-outline-variant/50 group-hover:border-secondary/30 transition-colors">Premiere Pro</span>
           <span className="bg-surface-container-highest px-3 py-1 rounded text-on-surface-variant font-code-md text-code-md border border-outline-variant/50 group-hover:border-secondary/30 transition-colors">After Effects</span>
+          <span className="bg-surface-container-highest px-3 py-1 rounded text-on-surface-variant font-code-md text-code-md border border-outline-variant/50 group-hover:border-secondary/30 transition-colors">Long-Form & Docu</span>
           <span className="bg-surface-container-highest px-3 py-1 rounded text-on-surface-variant font-code-md text-code-md border border-outline-variant/50 group-hover:border-secondary/30 transition-colors">Short-Form & B-Roll</span>
           <span className="bg-surface-container-highest px-3 py-1 rounded text-on-surface-variant font-code-md text-code-md border border-outline-variant/50 group-hover:border-secondary/30 transition-colors">Capcut</span>
           <span className="bg-surface-container-highest px-3 py-1 rounded text-on-surface-variant font-code-md text-code-md border border-outline-variant/50 group-hover:border-secondary/30 transition-colors">Audio & Color</span>
